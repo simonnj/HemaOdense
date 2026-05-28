@@ -1,0 +1,28 @@
+---
+import type { Sponsor } from "@data/sponsors";
+
+interface Props {
+  sponsors: Sponsor[];
+}
+
+const { sponsors } = Astro.props;
+---
+
+<div class="sponsor-grid">
+  {
+    sponsors.map((sponsor) => (
+      <article class="sponsor-card">
+        <img src={sponsor.logo} alt={`${sponsor.name} logo`} loading="lazy" />
+        <div>
+          <h2>{sponsor.name}</h2>
+          <p>{sponsor.description}</p>
+          {sponsor.website && (
+            <a class="text-link" href={sponsor.website} rel="noreferrer" target="_blank">
+              Besøg sponsor
+            </a>
+          )}
+        </div>
+      </article>
+    ))
+  }
+</div>

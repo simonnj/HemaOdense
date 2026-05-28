@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 280" role="img" aria-labelledby="title desc">
+  <title id="title">Sponsor placeholder 1</title>
+  <desc id="desc">Replace this with a sponsor logo.</desc>
+  <rect width="500" height="280" fill="#f7f4ef"/>
+  <rect x="70" y="80" width="360" height="76" fill="#b80000"/>
+  <text x="91" y="131" fill="#fff" font-family="Arial, sans-serif" font-size="38" font-weight="700">Sponsor logo</text>
+  <text x="117" y="205" fill="#252525" font-family="Arial, sans-serif" font-size="30">Udskift billede</text>
+</svg>

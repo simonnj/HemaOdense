@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">HEMA Odense hero placeholder</title>
+  <desc id="desc">Replace this placeholder with a club training photo.</desc>
+  <rect width="1600" height="900" fill="#4f6f44"/>
+  <path d="M0 650c230-80 420-78 620-20 270 78 500 70 980-86v356H0z" fill="#385a35"/>
+  <g stroke="#d8d8d8" stroke-width="18" stroke-linecap="round">
+    <path d="M160 160 1220 760"/>
+    <path d="M1420 150 430 790"/>
+  </g>
+  <circle cx="760" cy="455" r="130" fill="#20252d" opacity=".92"/>
+  <path d="M650 570c150 60 315 18 405-95 38 65 72 132 100 205-190 72-415 69-590-20 22-36 50-66 85-90z" fill="#242a33"/>
+  <rect x="80" y="690" width="560" height="78" fill="#1e2228" opacity=".82"/>
+  <text x="120" y="742" fill="#ffffff" font-family="Arial, sans-serif" font-size="38" font-weight="700">Udskift med klubfoto</text>
+</svg>

@@ -1,0 +1,27 @@
+---
+const navItems = [
+  { href: "/", label: "Forside" },
+  { href: "/bestyrelse-og-traenere/", label: "Bestyrelse og trænere" },
+  { href: "/events/", label: "Events" },
+  { href: "/hvad-er-hema/", label: "Hvad er HEMA?" },
+  { href: "/udstyr/", label: "Udstyr" },
+  { href: "/sponsorer/", label: "Sponsorer" },
+];
+---
+
+<header class="site-header">
+  <a class="brand" href="/" aria-label="HEMA Odense forside">
+    <img class="brand-logo" src="/images/brand/Hema_odense_logo.png" alt="" />
+    <span>HEMA Odense</span>
+  </a>
+  <input class="nav-toggle" id="nav-toggle" type="checkbox" aria-label="Åbn navigation" />
+  <label class="nav-button" for="nav-toggle" aria-hidden="true">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+  <nav class="nav-links" aria-label="Hovednavigation">
+    {navItems.map((item) => <a href={item.href}>{item.label}</a>)}
+    <a class="trial-link" href="https://www.facebook.com/groups/1201015829986327/">Gratis prøvetræning</a>
+  </nav>
+</header>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="title desc">
+  <title id="title">Event placeholder</title>
+  <desc id="desc">Replace this with an event photo.</desc>
+  <rect width="900" height="620" fill="#f7f4ef"/>
+  <rect x="90" y="86" width="720" height="440" fill="#d8d2c8"/>
+  <rect x="150" y="150" width="250" height="42" fill="#b80000"/>
+  <rect x="150" y="238" width="520" height="32" fill="#1e2228"/>
+  <rect x="150" y="310" width="410" height="32" fill="#1e2228"/>
+  <rect x="150" y="382" width="470" height="32" fill="#1e2228"/>
+  <text x="150" y="480" fill="#b80000" font-family="Arial, sans-serif" font-size="42" font-weight="700">Event foto</text>
+</svg>

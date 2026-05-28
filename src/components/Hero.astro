@@ -1,0 +1,20 @@
+---
+interface Props {
+  title: string;
+  subtitle?: string;
+  image?: string;
+}
+
+const {
+  title,
+  subtitle,
+  image = "/images/hero/Club_foto.jpg",
+} = Astro.props;
+---
+
+<section class="hero" style={`--hero-image: url('${image}')`}>
+  <div class="hero-content">
+    <h1>{title}</h1>
+    {subtitle && <p>{subtitle}</p>}
+  </div>
+</section>

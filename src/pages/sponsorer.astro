@@ -1,0 +1,27 @@
+---
+import Hero from "@components/Hero.astro";
+import SponsorGrid from "@components/SponsorGrid.astro";
+import { sponsors } from "@data/sponsors";
+import BaseLayout from "@layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Sponsorer" description="Sponsorer og samarbejdspartnere hos HEMA Odense.">
+  <Hero
+    title="Sponsorer"
+    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    image="/images/hero/sponsors-welcome-1485999623.jpg"
+  />
+
+  <section class="content-section narrow">
+    <p class="eyebrow">Støt klubben</p>
+    <h2>Tak til vores sponsorer</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua.
+    </p>
+  </section>
+
+  <section class="content-section">
+    <SponsorGrid sponsors={sponsors} />
+  </section>
+</BaseLayout>

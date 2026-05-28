@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="title desc">
+  <title id="title">Training placeholder</title>
+  <desc id="desc">Replace this with a training image.</desc>
+  <rect width="900" height="620" fill="#d8d2c8"/>
+  <rect y="360" width="900" height="260" fill="#5f7c4d"/>
+  <g stroke="#f4f4f4" stroke-width="10" stroke-linecap="round">
+    <path d="M100 210 570 500"/>
+    <path d="M780 190 300 505"/>
+  </g>
+  <circle cx="300" cy="320" r="58" fill="#1e2228"/>
+  <circle cx="590" cy="318" r="58" fill="#1e2228"/>
+  <path d="M240 390h125l45 170H205zM530 390h125l48 170H492z" fill="#2b3038"/>
+  <text x="54" y="90" fill="#1e2228" font-family="Arial, sans-serif" font-size="38" font-weight="700">Billede placeholder</text>
+</svg>

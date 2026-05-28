@@ -1,0 +1,28 @@
+---
+import Hero from "@components/Hero.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const events = await getCollection("events");
+  return events.map((event) => ({
+    params: { slug: event.slug },
+    props: { event },
+  }));
+}
+
+const { event } = Astro.props;
+const { Content } = await event.render();
+const formattedDate = new Intl.DateTimeFormat("da-DK", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+}).format(event.data.date);
+---
+
+<BaseLayout title={event.data.title} description={event.data.summary}>
+  <Hero title={event.data.title} subtitle={`${formattedDate} · ${event.data.location}`} image={event.data.image} />
+  <article class="content-section narrow prose">
+    <Content />
+  </article>
+</BaseLayout>

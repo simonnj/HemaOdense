@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 280" role="img" aria-labelledby="title desc">
+  <title id="title">Sponsor placeholder 2</title>
+  <desc id="desc">Replace this with a sponsor logo.</desc>
+  <rect width="500" height="280" fill="#ece5dc"/>
+  <circle cx="160" cy="140" r="72" fill="#b80000"/>
+  <rect x="250" y="94" width="140" height="32" fill="#252525"/>
+  <rect x="250" y="151" width="180" height="32" fill="#252525"/>
+  <text x="82" y="244" fill="#252525" font-family="Arial, sans-serif" font-size="28">Sponsor logo</text>
+</svg>

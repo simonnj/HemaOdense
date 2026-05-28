@@ -1,0 +1,25 @@
+---
+import Hero from "@components/Hero.astro";
+import PersonGrid from "@components/PersonGrid.astro";
+import { board, trainers } from "@data/people";
+import BaseLayout from "@layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Bestyrelse og trænere" description="Bestyrelse og trænere hos HEMA Odense.">
+  <Hero
+    title="Bestyrelse og trænere"
+    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    image="/images/hero/Chair_game.jpg"
+  />
+
+  <section class="content-section narrow">
+    <h2>Hvem kan du møde?</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua.
+    </p>
+  </section>
+
+  <PersonGrid title="Trænere" people={trainers} />
+  <PersonGrid title="Bestyrelsen" people={board} />
+</BaseLayout>

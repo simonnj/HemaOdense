@@ -1,0 +1,56 @@
+---
+import Hero from "@components/Hero.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="HEMA Odense" description="Forside for HEMA Odense.">
+  <Hero
+    title="HEMA Odense"
+    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  />
+
+  <section class="content-section intro-grid">
+    <div>
+      <p class="eyebrow">Lokal dansk HEMA-klub</p>
+      <h2>Velkommen til HEMA Odense</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua.
+      </p>
+      <p>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat.
+      </p>
+      <div class="button-row">
+        <a class="button" href="#kontakt">Kontakt os</a>
+        <a class="button secondary" href="/hvad-er-hema/">Hvad er HEMA?</a>
+      </div>
+    </div>
+    <img src="/images/hero/Troels_overshoulder.JPG" alt="HEMA træning placeholder" />
+  </section>
+
+  <section class="highlight-band" id="kontakt">
+    <div>
+      <p class="eyebrow">Kontakt</p>
+      <h2>Gratis prøvetræning</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+    <dl class="contact-list">
+      <div>
+        <dt>Email</dt>
+        <dd><a href="mailto:odensehema@gmail.com">odensehema@gmail.com</a></dd>
+      </div>
+      <div>
+        <dt>Træning</dt>
+        <dd>Mandag & onsdag kl. 17-20</dd>
+      </div>
+      <div>
+        <dt>Sted</dt>
+        <dd>Rosenbæk Torv 30, 5000 Odense</dd>
+      </div>
+    </dl>
+  </section>
+</BaseLayout>

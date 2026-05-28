@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-labelledby="title desc">
+  <title id="title">Person placeholder 2</title>
+  <desc id="desc">Replace this with a portrait photo.</desc>
+  <rect width="400" height="400" fill="#c8d0cb"/>
+  <circle cx="200" cy="142" r="76" fill="#252525"/>
+  <path d="M72 365c20-98 82-145 128-145s108 47 128 145z" fill="#3c4650"/>
+  <text x="74" y="52" fill="#b80000" font-family="Arial, sans-serif" font-size="32" font-weight="700">Portræt</text>
+</svg>

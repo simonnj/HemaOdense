@@ -1,0 +1,39 @@
+---
+import EventCard from "@components/EventCard.astro";
+import Hero from "@components/Hero.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const events = (await getCollection("events")).sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime(),
+);
+---
+
+<BaseLayout title="Events" description="Kommende events hos HEMA Odense.">
+  <Hero
+    title="Events"
+    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    image="/images/hero/julefrokost.jpg"
+  />
+
+  <section class="content-section">
+    <div class="section-heading">
+      <p class="eyebrow">Kommende arrangementer</p>
+      <h2>Events</h2>
+    </div>
+    <div class="event-list">
+      {
+        events.map((event) => (
+          <EventCard
+            title={event.data.title}
+            date={event.data.date}
+            location={event.data.location}
+            summary={event.data.summary}
+            image={event.data.image}
+            href={`/events/${event.slug}/`}
+          />
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>

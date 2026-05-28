@@ -1,0 +1,28 @@
+---
+import type { Person } from "@data/people";
+
+interface Props {
+  title: string;
+  people: Person[];
+}
+
+const { title, people } = Astro.props;
+---
+
+<section class="content-section">
+  <h2>{title}</h2>
+  <div class="people-grid">
+    {
+      people.map((person) => (
+        <article class="person-card">
+          <img src={person.image} alt={`Portræt af ${person.name}`} loading="lazy" />
+          <div>
+            <h3>{person.name}</h3>
+            <p>{person.role}</p>
+            {person.email && <a href={`mailto:${person.email}`}>{person.email}</a>}
+          </div>
+        </article>
+      ))
+    }
+  </div>
+</section>

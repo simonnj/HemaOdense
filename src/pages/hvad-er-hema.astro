@@ -1,0 +1,43 @@
+---
+import Hero from "@components/Hero.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Hvad er HEMA?" description="Kort forklaring af HEMA.">
+  <Hero
+    title="Hvad er HEMA?"
+    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    image="/images/hero/magiske_dage.jpg"
+  />
+
+  <section class="content-section two-column">
+    <div>
+      <p class="eyebrow">Historisk fægtning</p>
+      <h2>Lorem ipsum dolor</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua.
+      </p>
+      <p>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat.
+      </p>
+    </div>
+    <img src="/images/hero/Simon_overskulder.JPG" alt="HEMA udstyr placeholder" />
+  </section>
+
+  <section class="content-section card-grid">
+    <article>
+      <h2>Træning</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </article>
+    <article>
+      <h2>Kilder</h2>
+      <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </article>
+    <article>
+      <h2>Sikkerhed</h2>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+    </article>
+  </section>
+</BaseLayout>

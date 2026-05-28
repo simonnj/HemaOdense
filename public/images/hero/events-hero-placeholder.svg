@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Events hero placeholder</title>
+  <desc id="desc">Replace this with an event image.</desc>
+  <rect width="1600" height="900" fill="#2f4858"/>
+  <rect y="580" width="1600" height="320" fill="#46643f"/>
+  <rect x="180" y="180" width="500" height="360" fill="#f7f4ef" opacity=".92"/>
+  <rect x="230" y="245" width="400" height="42" fill="#b80000"/>
+  <rect x="230" y="330" width="320" height="32" fill="#1e2228"/>
+  <rect x="230" y="400" width="360" height="32" fill="#1e2228"/>
+  <g stroke="#eaeaea" stroke-width="16" stroke-linecap="round">
+    <path d="M850 230 1280 650"/>
+    <path d="M1320 220 860 675"/>
+  </g>
+  <text x="220" y="500" fill="#1e2228" font-family="Arial, sans-serif" font-size="40" font-weight="700">Event foto</text>
+</svg>

@@ -1,0 +1,36 @@
+---
+import Header from "@components/Header.astro";
+import "@styles/global.css";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Information om HEMA Odense." } = Astro.props;
+const pageTitle = title === "HEMA Odense" ? title : `${title} | HEMA Odense`;
+---
+
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div>
+        <strong>HEMA Odense</strong>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <a href="mailto:kontakt@example.dk">kontakt@example.dk</a>
+    </footer>
+  </body>
+</html>

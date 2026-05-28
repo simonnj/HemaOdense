@@ -1,0 +1,26 @@
+---
+interface Props {
+  title: string;
+  date: Date;
+  location: string;
+  summary: string;
+  image: string;
+  href: string;
+}
+
+const { title, date, location, summary, image, href } = Astro.props;
+const formattedDate = new Intl.DateTimeFormat("da-DK", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+}).format(date);
+---
+
+<article class="event-card">
+  <img src={image} alt="" loading="lazy" />
+  <div class="event-card-body">
+    <p class="eyebrow">{formattedDate} · {location}</p>
+    <h2><a href={href}>{title}</a></h2>
+    <p>{summary}</p>
+  </div>
+</article>

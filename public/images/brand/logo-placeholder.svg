@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title desc">
+  <title id="title">HEMA Odense logo placeholder</title>
+  <desc id="desc">Replace this file with the real HEMA Odense logo.</desc>
+  <rect width="120" height="120" fill="#b80000"/>
+  <path d="M60 14 98 30v28c0 25-15 43-38 52-23-9-38-27-38-52V30z" fill="#f7f4ef"/>
+  <path d="M60 23 87 35v22c0 17-10 31-27 40-17-9-27-23-27-40V35z" fill="#b80000"/>
+  <g stroke="#f7f4ef" stroke-linecap="round" stroke-width="7">
+    <path d="M30 18 91 102"/>
+    <path d="M90 18 29 102"/>
+  </g>
+  <text x="60" y="72" fill="#f7f4ef" font-family="Arial, sans-serif" font-size="30" font-weight="700" text-anchor="middle">HO</text>
+</svg>
