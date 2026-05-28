@@ -1,4 +1,6 @@
 ---
+import { withBase } from "../utils/paths";
+
 interface Props {
   title: string;
   date: Date;
@@ -17,10 +19,10 @@ const formattedDate = new Intl.DateTimeFormat("da-DK", {
 ---
 
 <article class="event-card">
-  <img src={image} alt="" loading="lazy" />
+  <img src={withBase(image)} alt="" loading="lazy" />
   <div class="event-card-body">
     <p class="eyebrow">{formattedDate} · {location}</p>
-    <h2><a href={href}>{title}</a></h2>
+    <h2><a href={withBase(href)}>{title}</a></h2>
     <p>{summary}</p>
   </div>
 </article>

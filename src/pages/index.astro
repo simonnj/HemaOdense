@@ -1,6 +1,7 @@
 ---
 import Hero from "@components/Hero.astro";
 import BaseLayout from "@layouts/BaseLayout.astro";
+import { withBase } from "../utils/paths";
 ---
 
 <BaseLayout title="HEMA Odense" description="Forside for HEMA Odense.">
@@ -23,10 +24,10 @@ import BaseLayout from "@layouts/BaseLayout.astro";
       </p>
       <div class="button-row">
         <a class="button" href="#kontakt">Kontakt os</a>
-        <a class="button secondary" href="/hvad-er-hema/">Hvad er HEMA?</a>
+        <a class="button secondary" href={withBase("/hvad-er-hema/")}>Hvad er HEMA?</a>
       </div>
     </div>
-    <img src="/images/hero/Troels_overshoulder.JPG" alt="HEMA træning placeholder" />
+    <img src={withBase("/images/hero/Troels_overshoulder.JPG")} alt="HEMA træning placeholder" />
   </section>
 
   <section class="highlight-band" id="kontakt">

@@ -1,6 +1,7 @@
 ---
 import Hero from "@components/Hero.astro";
 import BaseLayout from "@layouts/BaseLayout.astro";
+import { withBase } from "../utils/paths";
 ---
 
 <BaseLayout title="Hvad er HEMA?" description="Kort forklaring af HEMA.">
@@ -23,7 +24,7 @@ import BaseLayout from "@layouts/BaseLayout.astro";
         aliquip ex ea commodo consequat.
       </p>
     </div>
-    <img src="/images/hero/Simon_overskulder.JPG" alt="HEMA udstyr placeholder" />
+    <img src={withBase("/images/hero/Simon_overskulder.JPG")} alt="HEMA udstyr placeholder" />
   </section>
 
   <section class="content-section card-grid">

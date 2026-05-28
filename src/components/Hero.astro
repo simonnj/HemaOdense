@@ -1,4 +1,6 @@
 ---
+import { withBase } from "../utils/paths";
+
 interface Props {
   title: string;
   subtitle?: string;
@@ -10,9 +12,11 @@ const {
   subtitle,
   image = "/images/hero/Club_foto.jpg",
 } = Astro.props;
+
+const heroImage = withBase(image);
 ---
 
-<section class="hero" style={`--hero-image: url('${image}')`}>
+<section class="hero" style={`--hero-image: url('${heroImage}')`}>
   <div class="hero-content">
     <h1>{title}</h1>
     {subtitle && <p>{subtitle}</p>}

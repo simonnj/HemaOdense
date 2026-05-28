@@ -1,4 +1,6 @@
 ---
+import { withBase } from "../utils/paths";
+
 const navItems = [
   { href: "/", label: "Forside" },
   { href: "/bestyrelse-og-traenere/", label: "Bestyrelse og trænere" },
@@ -10,8 +12,8 @@ const navItems = [
 ---
 
 <header class="site-header">
-  <a class="brand" href="/" aria-label="HEMA Odense forside">
-    <img class="brand-logo" src="/images/brand/Hema_odense_logo.png" alt="" />
+  <a class="brand" href={withBase("/")} aria-label="HEMA Odense forside">
+    <img class="brand-logo" src={withBase("/images/brand/Hema_odense_logo.png")} alt="" />
     <span>HEMA Odense</span>
   </a>
   <input class="nav-toggle" id="nav-toggle" type="checkbox" aria-label="Åbn navigation" />
@@ -21,7 +23,7 @@ const navItems = [
     <span></span>
   </label>
   <nav class="nav-links" aria-label="Hovednavigation">
-    {navItems.map((item) => <a href={item.href}>{item.label}</a>)}
+    {navItems.map((item) => <a href={withBase(item.href)}>{item.label}</a>)}
     <a class="trial-link" href="https://www.facebook.com/groups/1201015829986327/">Gratis prøvetræning</a>
   </nav>
 </header>

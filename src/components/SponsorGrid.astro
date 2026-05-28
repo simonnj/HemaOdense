@@ -1,5 +1,6 @@
 ---
 import type { Sponsor } from "@data/sponsors";
+import { withBase } from "../utils/paths";
 
 interface Props {
   sponsors: Sponsor[];
@@ -12,7 +13,7 @@ const { sponsors } = Astro.props;
   {
     sponsors.map((sponsor) => (
       <article class="sponsor-card">
-        <img src={sponsor.logo} alt={`${sponsor.name} logo`} loading="lazy" />
+        <img src={withBase(sponsor.logo)} alt={`${sponsor.name} logo`} loading="lazy" />
         <div>
           <h2>{sponsor.name}</h2>
           <p>{sponsor.description}</p>

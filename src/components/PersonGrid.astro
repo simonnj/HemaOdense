@@ -1,5 +1,6 @@
 ---
 import type { Person } from "@data/people";
+import { withBase } from "../utils/paths";
 
 interface Props {
   title: string;
@@ -15,7 +16,7 @@ const { title, people } = Astro.props;
     {
       people.map((person) => (
         <article class="person-card">
-          <img src={person.image} alt={`Portræt af ${person.name}`} loading="lazy" />
+          <img src={withBase(person.image)} alt={`Portræt af ${person.name}`} loading="lazy" />
           <div>
             <h3>{person.name}</h3>
             <p>{person.role}</p>
