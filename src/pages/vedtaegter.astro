@@ -1,0 +1,180 @@
+---
+import Hero from "@components/Hero.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { withBase } from "../utils/paths";
+
+const sections = [
+  {
+    title: "§1 Navn og hjemsted",
+    body: [
+      "Foreningens navn er HEMA Odense, og foreningens hjemsted er Odense Kommune.",
+      "Foreningen og dens medlemmer er tilsluttet Dansk Fægte-Forbund under Danmarks Idrætsforbund og er underlagt disses love og bestemmelser.",
+    ],
+  },
+  {
+    title: "§2 Formål",
+    body: [
+      "Foreningens formål er at træne, støtte og fremme europæisk historisk fægtning med fokus på perioden år 850-1900.",
+      "Foreningen studerer og fortolker teknikker fra historiske fægtemanualer og bringer dem til live gennem ugentlige træninger, seminarer, stævner og arrangementer.",
+      "Foreningen arbejder også for medlemmernes sundhed, trivsel, historiske viden og lyst til at engagere sig i foreningslivet.",
+    ],
+  },
+  {
+    title: "§3 Medlemskab",
+    body: [
+      "Medlemmer skal være fyldt 16 år. Personer under 18 år kan kun indmeldes med forældre eller værges samtykke.",
+      "Medlemmer betaler kontingent, deltager i aktiviteter på eget ansvar og skal overholde foreningens regler, retningslinjer og trænernes anvisninger.",
+      "Medlemmer kan bortvises fra aktiviteter eller ekskluderes fra foreningen, hvis de handler til skade for foreningen, er til fare for sig selv eller andre, eller ikke opfylder deres medlemsforpligtelser.",
+      "Passive medlemmer kan optages som støttemedlemmer. De har ikke adgang til selve idrætsudøvelsen, men er valgbare til bestyrelsen.",
+    ],
+  },
+  {
+    title: "§4 Træning og trænere",
+    body: [
+      "Enhver træning skal ske under ledelse af en eller flere trænere udpeget af bestyrelsen. Hvis dette ikke er muligt, aflyses træningen.",
+      "Den ansvarshavende træner har det sidste ord under træningen og vurderer, hvordan et medlem kan deltage ud fra udstyr, opførsel og sikkerhed.",
+      "Bestyrelsen kan til enhver tid udpege og afskedige trænere.",
+    ],
+  },
+  {
+    title: "§5 Indmeldelse",
+    body: [
+      "Indmeldelse sker skriftligt til kasserer eller forperson. For medlemmer under 18 år skal blanketten underskrives af forældre eller værge.",
+    ],
+  },
+  {
+    title: "§6 Udmeldelse",
+    body: [
+      "Udmeldelse sker skriftligt til kassereren med tre måneders varsel til udgangen af en kontingentperiode.",
+      "I forbindelse med udmeldelse skal medlemmets eventuelle økonomiske mellemværender med foreningen afvikles.",
+    ],
+  },
+  {
+    title: "§7 Kontingent/finansiering",
+    body: [
+      "Kontingent fastsættes af generalforsamlingen, mens indbetalingsterminer og opkrævningsform fastsættes af bestyrelsen.",
+      "Hvis regelmæssige træninger ikke kan afholdes, indstilles opkrævning af kontingent indtil træningen kan optages igen, uden at medlemskabet ophører.",
+      "Foreningen kan derudover finansieres gennem sponsor- og annoncestøtte samt bidrag fra offentlige og private virksomheder, fonde, foreninger, institutioner og privatpersoner.",
+    ],
+  },
+  {
+    title: "§8 Restance",
+    body: [
+      "Hvis et medlem efter påmindelse stadig ikke betaler kontingent, betragtes medlemmet som udmeldt.",
+    ],
+  },
+  {
+    title: "§9 Generalforsamling",
+    body: [
+      "Generalforsamlingen er foreningens øverste myndighed. Stemmeret har aktive medlemmer, som har været medlemmer i mindst tre måneder og ikke er i kontingentrestance.",
+      "Der kan kun stemmes ved personligt fremmøde.",
+    ],
+  },
+  {
+    title: "§10 Ordinær generalforsamling",
+    body: [
+      "Ordinær generalforsamling afholdes én gang årligt inden udgangen af april måned og indkaldes med mindst fire ugers varsel.",
+      "Forslag, som ønskes behandlet på generalforsamlingen, skal sendes skriftligt til bestyrelsen senest to uger før generalforsamlingen.",
+      "En rettidig indvarslet generalforsamling er beslutningsdygtig uanset de fremmødtes antal.",
+    ],
+  },
+  {
+    title: "§11 Dagsorden",
+    body: [
+      "Dagsordenen for den ordinære generalforsamling skal blandt andet omfatte valg af dirigent og referent, forpersonens beretning, regnskab, budget, kontingent, indkomne forslag, valg til bestyrelse, valg af revisor, valg af tillidsperson og eventuelt.",
+    ],
+  },
+  {
+    title: "§12 Generalforsamlingens ledelse",
+    body: [
+      "Forhandlingerne ledes af en dirigent valgt af generalforsamlingen.",
+      "Beslutninger træffes ved almindeligt flertal, medmindre andet fremgår af vedtægterne.",
+      "Der udfærdiges referat over generalforsamlingens beslutninger.",
+    ],
+  },
+  {
+    title: "§13 Ekstraordinær generalforsamling",
+    body: [
+      "Ekstraordinær generalforsamling kan indkaldes af bestyrelsen eller efter skriftligt ønske fra mindst en femtedel af de stemmeberettigede medlemmer.",
+      "Generalforsamlingen skal afholdes senest to måneder efter begæringens modtagelse.",
+    ],
+  },
+  {
+    title: "§14 Bestyrelsen",
+    body: [
+      "Bestyrelsen er foreningens daglige ledelse og repræsenterer foreningen i alle forhold.",
+      "Bestyrelsen består af tre medlemmer: forperson, næstforperson og kasserer, som vælges for en periode på to år.",
+      "Bestyrelsen er beslutningsdygtig, når mindst to medlemmer, herunder forpersonen, er til stede.",
+    ],
+  },
+  {
+    title: "§15 Tillidsperson",
+    body: [
+      "Medlemmerne kan vælge en tillidsperson, som repræsenterer medlemmerne i forhold vedrørende socialt sammenhold og tryghed.",
+      "Tillidspersonen skal blandt andet tjekke ind hos medlemmer, lytte og mægle i konflikter og deltage i relevante personsager.",
+    ],
+  },
+  {
+    title: "§16 Regnskab",
+    body: [
+      "Foreningens regnskabsår er kalenderåret, og revisor vælges på den ordinære generalforsamling for ét år ad gangen.",
+      "Bestyrelsen skal inden den 1. marts afgive regnskab for det foregående år til revisoren.",
+    ],
+  },
+  {
+    title: "§17 Tegning og hæftelse",
+    body: [
+      "Foreningen tegnes af forpersonen. Ved økonomiske dispositioner tegnes foreningen af forpersonen og kassereren i forening.",
+      "Køb, salg eller pantsætning af fast ejendom samt lånoptagelse skal godkendes af generalforsamlingen.",
+      "Foreningen kan maksimalt stifte gæld for 2.000 kr.",
+      "Der påhviler ikke foreningens medlemmer nogen personlig hæftelse for foreningens forpligtelser.",
+    ],
+  },
+  {
+    title: "§18 Vedtægtsændringer",
+    body: [
+      "Vedtægtsændringer kræver mindst to tredjedele af de afgivne stemmer.",
+    ],
+  },
+  {
+    title: "§19 Opløsning",
+    body: [
+      "Beslutning om foreningens opløsning kan kun træffes på en særligt indkaldt ekstraordinær generalforsamling.",
+      "Ved opløsning af foreningen skal foreningens midler overdrages til Dansk Fægte-Forbund.",
+    ],
+  },
+];
+---
+
+<BaseLayout title="Vedtægter" description="Vedtægter for HEMA Odense.">
+  <Hero
+    title="Vedtægter"
+    subtitle="Foreningens gældende vedtægter"
+    image="/images/hero/Ostillet_club_foto.jpg"
+  />
+
+  <section class="content-section document-page">
+    <div class="document-intro">
+      <p class="eyebrow">HEMA Odense</p>
+      <h2>Gældende vedtægter</h2>
+      <p>
+        Her finder du en læsevenlig udgave af HEMA Odenses vedtægter. Den underskrevne
+        original kan hentes som PDF.
+      </p>
+      <a class="button" href={withBase("/documents/vedtaegter-2025.pdf")} target="_blank">
+        Hent underskrevet PDF
+      </a>
+    </div>
+
+    <div class="document-flow">
+      {
+        sections.map((section) => (
+          <section class="document-section">
+            <h2>{section.title}</h2>
+            {section.body.map((paragraph) => <p>{paragraph}</p>)}
+          </section>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>

@@ -374,6 +374,37 @@ input:focus-visible {
   margin-top: 1rem;
 }
 
+.document-page {
+  max-width: 980px;
+}
+
+.document-intro {
+  margin-bottom: 2rem;
+}
+
+.document-flow {
+  display: grid;
+  gap: 2rem;
+}
+
+.document-section {
+  border-top: 1px solid var(--line);
+  padding-top: 1.5rem;
+}
+
+.document-section h2 {
+  font-size: clamp(1.25rem, 2vw, 1.7rem);
+  margin-bottom: 0.75rem;
+}
+
+.document-section p {
+  margin: 0;
+}
+
+.document-section p + p {
+  margin-top: 0.85rem;
+}
+
 .event-list {
   display: grid;
   gap: 1.25rem;
@@ -487,17 +518,6 @@ input:focus-visible {
 .product-card span {
   font-weight: 800;
   line-height: 1.25;
-}
-
-.recommendation-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem 0.8rem;
-  margin-top: 1rem;
-}
-
-.recommendation-links a {
-  font-size: 0.95rem;
 }
 
 .sponsor-card {

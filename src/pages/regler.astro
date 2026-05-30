@@ -1,0 +1,108 @@
+---
+import Hero from "@components/Hero.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+
+const rules = [
+  {
+    title: "Håndtering af våben og udstyr",
+    body: [
+      "Våben og udstyr, der anvendes til HEMA-fægtning, er ikke legetøj og skal altid håndteres forsvarligt.",
+      "Det er strengt forbudt bevidst at forsøge at skade en modstander. Du må aldrig lægge alle dine kræfter i et slag eller bevidst sigte efter ubeskyttede eller dårligt beskyttede områder.",
+      "Du må ikke agere truende uden for kamp, og det er kun tilladt at slå mod nogen, der har tilstrækkeligt beskyttelsesudstyr på og har givet eksplicit samtykke.",
+    ],
+  },
+  {
+    title: "Udstyr til stålfægtning",
+    body: [
+      "Når man fægter med stål mod en modstander, skal begge parter bruge fuldt sikkerhedsudstyr.",
+      "Det omfatter maske, fægtejakke, halsbeskytter, brystplade, armbeskyttere, handsker, fægtebukser, skridtbeskytter samt ben- og knæbeskyttere.",
+      "Udstyret skal godkendes af en træner. Hvis der ikke er tilstrækkeligt udstyr, må man bruge skumsværd eller fægte i roligt tempo mod en af klubbens trænere.",
+    ],
+  },
+  {
+    title: "Kontrol og sikker afstand",
+    body: [
+      "Du skal altid være i fuld kontrol over dit våben. Det er ikke tilladt at kaste med våben eller udstyr eller at svinge vildt omkring sig.",
+      "Du skal være opmærksom på dine omgivelser og holde sikker afstand til andre, uanset om du er i kamp eller ej.",
+      "Du må aldrig stå med ryggen til nogen, der fægter, og du må ikke pege dit sværd mod nogen, som ikke har maske på.",
+      "Når sværdet ikke er i brug, skal spidsen pege lodret nedad.",
+    ],
+  },
+  {
+    title: "Lån af udstyr",
+    body: [
+      "HEMA Odense ejer udstyr, som medlemmer kan låne, indtil de anskaffer eget udstyr.",
+      "Låneudstyr skal behandles ordentligt, så det ikke lider unødig skade.",
+      "Hvis der ikke er nok låneudstyr til alle, fordeler den ansvarshavende træner udstyret. Typisk har de nyeste medlemmer fortrinsret.",
+    ],
+  },
+  {
+    title: "Regler for kamp",
+    body: [
+      "Som deltager i kamp har du ansvar for både din egen og modstanderens sikkerhed.",
+      "Enhver runde indledes med, at begge parter sikrer sig, at modstanderen er klar. Det kan gøres mundtligt, med et tydeligt nik eller ved at holde sværdet foran ansigtet.",
+      "Kast med objekter, slag med knytnæve, pommel eller parerstang samt forsøg på at få modstanderen til at falde er ikke tilladt.",
+      "Hvis du overvejer en teknik, som ligger væsentligt uden for det, der undervises i, skal du først spørge en træner.",
+    ],
+  },
+  {
+    title: "Trænerens ansvar",
+    body: [
+      "Under træningen er det altid trænerens ord, der er lov, og træneren kan til enhver tid bortvise et medlem fra træningen.",
+      "Sådanne tilfælde diskuteres altid efterfølgende af bestyrelsen.",
+    ],
+  },
+  {
+    title: "Tryghed og fællesskab",
+    body: [
+      "HEMA er en kontaktsport, så skader kan forekomme. Medlemmer opfordres til at have en dækkende forsikring.",
+      "Vi fægter for at have det sjovt, og vi forventer, at alle medlemmer gør deres til, at andre føler sig inkluderet og velkomne.",
+      "Hvis du har følt dig dårligt behandlet af en træner eller et andet medlem, eller har haft en dårlig oplevelse i klubben, opfordrer vi dig til at kontakte klubbens tillidsrepræsentant.",
+    ],
+  },
+  {
+    title: "Dekoration af udstyr",
+    body: [
+      "Medlemmer må gerne udtrykke sig gennem dekoration af masker, sværd og andet træningsudstyr, så længe dekorationen ikke skaber utryghed eller strider mod klubbens og forbundets regler.",
+      "Rød dekoration er ikke tilladt. Det omfatter dekorationer, der strider mod dansk lov eller Dansk Fægte-Forbunds regler, for eksempel reklamer for tobak, alkohol, euforiserende stoffer eller pornografi.",
+      "Gul dekoration omfatter potentielt stødende eller problematiske symboler, for eksempel politiske eller religiøse symboler og symboler for andre organisationer. Det er ikke automatisk forbudt, men hvis nogen oplever dekorationen som problematisk, kan de kontakte bestyrelsen.",
+      "Grøn dekoration omfatter øvrig dekoration. Hvis du overvejer at dekorere dit udstyr, beder vi dig nævne det for bestyrelsen, inden du bestiller eller laver dekorationen.",
+      "Bestyrelsen forbeholder sig retten til at genoverveje en dekoration, hvis den senere viser sig at skabe problemer for tryghed eller fællesskab i klubben.",
+    ],
+  },
+];
+---
+
+<BaseLayout title="Regler i klubben" description="Regler og retningslinjer for medlemmer i HEMA Odense.">
+  <Hero
+    title="Regler i klubben"
+    subtitle="Regler og retningslinjer for sikker, ansvarlig og god træning i HEMA Odense."
+    image="/images/hero/gear_placeholder.jpg"
+  />
+
+  <section class="content-section document-page">
+    <div class="document-intro">
+      <p class="eyebrow">Medlemmer</p>
+      <h2>Regler og retningslinjer</h2>
+      <p>
+        Alle medlemmer skal kende klubbens regler. De findes for at sikre tryg træning,
+        godt fællesskab og ansvarlig håndtering af våben og udstyr.
+      </p>
+      <p>
+        Reglerne opdateres løbende. Det er op til det enkelte medlem at have læst og
+        forstået de aktuelt gældende regler.
+      </p>
+    </div>
+
+    <div class="document-flow">
+      {
+        rules.map((rule) => (
+          <section class="document-section">
+            <h2>{rule.title}</h2>
+            {rule.body.map((paragraph) => <p>{paragraph}</p>)}
+          </section>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>

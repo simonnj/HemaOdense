@@ -2,7 +2,6 @@
 import { withBase } from "../utils/paths";
 
 const navItems = [
-  { href: "/", label: "Forside" },
   { href: "/events/", label: "Events" },
   { href: "/hvad-er-hema/", label: "Hvad er HEMA?" },
   { href: "/udstyr/", label: "Udstyr" },
@@ -26,6 +25,8 @@ const navItems = [
       <a href={withBase("/hvem-er-vi/")}>Hvem er vi?</a>
       <div class="nav-submenu">
         <a href={withBase("/bestyrelse-og-traenere/")}>Bestyrelse og trænere</a>
+        <a href={withBase("/vedtaegter/")}>Vedtægter</a>
+        <a href={withBase("/regler/")}>Regler i klubben</a>
       </div>
     </div>
     {navItems.map((item) => <a href={withBase(item.href)}>{item.label}</a>)}
