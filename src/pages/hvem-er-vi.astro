@@ -1,0 +1,130 @@
+---
+import Hero from "@components/Hero.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { withBase } from "../utils/paths";
+---
+
+<BaseLayout title="Hvem er vi?" description="Læs om HEMA Odense og klubbens fællesskab.">
+  <Hero
+    title="Hvem er vi?"
+    subtitle="En lokal HEMA-klub med plads til både nysgerrige begyndere og erfarne fægtere."
+  />
+
+  <section class="content-section two-column">
+    <div>
+      <p class="eyebrow">HEMA Odense</p>
+      <h2>Et fællesskab omkring historisk fægtning</h2>
+      <p>
+        HEMA Odense blev stiftet for i 2016 af en lille gruppe der havde interresse for at fægte med langsværd.
+        Fra den spæde start med minimalt udstyr i en baghave for 10 år siden er vi nu en klub med over 20 medlemmer og et hold af dedikerede underviserer.
+        I dag har vi hjemme i Kulturmaskinen i hjertet af Odense og træner i Rosenbækhuset.
+
+      </p>
+      <p>
+        Siden 2024 branchede vi ud i flere våben typer og underviser nu også fast i sabelfægtning.
+        Hvis din interresse ligger i Rapieren, sværd og buckler eller noget tredje vil vi også gerne hjælpe dig til at udforske den interresse.
+      </p>
+      <p>
+        Vi er en del af Dansk Fægteforbund DFF og er aktive i det nationale samarbejde mellem danske HEMA klubber.
+        
+      </p>
+      <p>
+        Klubben drives af frivillige, og vores medlemmer kommer med mange forskellige
+        baggrunde. Nogle er optaget af historie og kilder, andre kommer for sporten,
+        teknikken eller det sociale. Det vigtigste er lysten til at lære og være en del
+        af holdet.
+      </p>
+    </div>
+    <img src={withBase("/images/hero/Ostillet_club_foto.jpg")} alt="HEMA Odense træning" />
+  </section>
+
+  <section class="content-section weapon-systems">
+    <div class="section-heading">
+      <p class="eyebrow">Historisk tradition</p>
+      <h2>Hvilke systemer underviser vi i?</h2>
+      <p>
+        I HEMA Odense er vi ikke bundet til én enkelt fægtemester eller én fast skole.
+        Vi arbejder med flere historiske kilder, men tager udgangspunkt i bestemte
+        systemer, så undervisningen har et fælles sprog for teknik, afstand, timing og
+        sikkerhed.
+      </p>
+    </div>
+
+    <article class="weapon-system">
+      <img
+        src={withBase("/images/hero/Johannes_liechtenauer.jpg")}
+        alt="Illustration af Johannes Liechtenauer"
+      />
+      <div>
+        <h3>Langsværd</h3>
+        <p>
+          Langsværd er klubbens ældste våbensystem og stadig en central del af vores
+          træning. Undervisningen tager primært udgangspunkt i den tyske tradition efter
+          Johannes Liechtenauer og de mestre, der senere fortolkede og videreudviklede
+          hans lære.
+        </p>
+        <p>
+          Her arbejder vi med grundlæggende kropsmekanik, fodarbejde, afstand, hug, stik,
+          bindinger og det taktiske spil, der opstår når to klinger mødes. Systemet giver
+          både begyndere en klar teknisk ramme og erfarne fægtere rig mulighed for at
+          nørde detaljer, kilder og fri fægtning.
+        </p>
+        <p>
+          Vi lader os også inspirere af andre traditioner, når det giver mening for
+          træningen, blandt andet italienske mestre som Fiore dei Liberi og Filippo Vadi.
+        </p>
+      </div>
+    </article>
+
+    <article class="weapon-system reverse">
+      <img
+        src={withBase("/images/hero/Arlow.jpg")}
+        alt="Forside fra Gusztáv Arlows sabelfægtningsmanual"
+      />
+      <div>
+        <h3>Sabel</h3>
+        <p>
+          Sabel er et hurtigere og mere bevægeligt våbensystem, hvor timing, linjer og
+          præcise angreb spiller en stor rolle. I vores undervisning tager vi især
+          udgangspunkt i Sir Gusztáv Arlows sabelfægtningsmanual og den tradition for
+          militær og sportslig sabelfægtning, som manualen står i.
+        </p>
+        <p>
+          Træningen fokuserer på skarpe grundstillinger, cuts, parader, riposter,
+          afstandsarbejde og evnen til at skifte mellem offensivt pres og kontrolleret
+          forsvar. Sabel er derfor et godt supplement til langsværd, fordi det udvikler
+          reaktionsevne, tempo og præcision på en anden måde.
+        </p>
+        <p>
+          Som med vores øvrige træning arbejder vi sikkert og progressivt, så nye
+          fægtere kan lære systemet trin for trin, mens mere erfarne medlemmer kan
+          udforske tempo, taktik og sparring.
+        </p>
+      </div>
+    </article>
+  </section>
+
+  <section class="content-section card-grid">
+    <article>
+      <h2>Nye medlemmer</h2>
+      <p>
+        Du behøver ikke have erfaring med fægtning eller kampsport for at starte. Vi
+        hjælper dig ind i træningen trin for trin.
+      </p>
+    </article>
+    <article>
+      <h2>Frivillig klub</h2>
+      <p>
+        Træning, arrangementer og klubarbejde bliver båret af frivillige kræfter, der
+        gerne vil skabe et godt miljø omkring HEMA i Odense.
+      </p>
+    </article>
+    <article>
+      <h2>Sikker træning</h2>
+      <p>
+        Vi prioriterer kontrol, udstyr og god træningskultur, så både begyndere og
+        erfarne medlemmer kan udvikle sig sikkert.
+      </p>
+    </article>
+  </section>
+</BaseLayout>
