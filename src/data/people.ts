@@ -8,37 +8,37 @@ export type Person = {
 export const trainers: Person[] = [
   {
     name: "Anton Hansen",
-    role: "Sabel Træner",
+    role: "Sabeltræner",
     email: "kontakt@example.dk",
     image: "/images/people/Anton_sabel.jpg",
   },
   {
     name: "Karsten Hørup",
-    role: "Langsværd træner",
+    role: "Langsværdstræner",
     email: "kontakt@example.dk",
     image: "/images/people/Karsten.png",
   },
   {
     name: "Malte Brænder",
-    role: "Langsværd træner",
+    role: "Langsværdstræner",
     email: "kontakt@example.dk",
     image: "/images/people/Malte.JPG",
   },
   {
     name: "Miro Hradsky",
-    role: "Sabel træner",
+    role: "Sabeltræner",
     email: "kontakt@example.dk",
     image: "/images/people/Miro.jpg",
   },
   {
     name: "Simon Nyborg",
-    role: "Langsværd / sabel træner",
-    email: "kontakt@example.dk",
+    role: "Langsværd- og sabeltræner",
+    email: "simon-nj@hotmail.com",
     image: "/images/people/Simon.jpeg",
   },
   {
     name: "Troels Jensen",
-    role: "Langsværd træner",
+    role: "Langsværdstræner",
     email: "kontakt@example.dk",
     image: "/images/people/Troels.jpg",
   },
@@ -48,7 +48,7 @@ export const board: Person[] = [
   {
     name: "Simon Nyborg",
     role: "Forperson",
-    email: "kontakt@example.dk",
+    email: "simon-nj@hotmail.com",
     image: "/images/people/Simon.jpeg",
   },
   {
@@ -59,7 +59,7 @@ export const board: Person[] = [
   },
   {
     name: "Malte Brænder",
-    role: "Kassere",
+    role: "Kasserer",
     email: "kontakt@example.dk",
     image: "/images/people/Malte.JPG",
   },
