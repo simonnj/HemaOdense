@@ -1,5 +1,6 @@
 ---
 import Header from "@components/Header.astro";
+import { withBase } from "../utils/paths";
 import "@styles/global.css";
 
 interface Props {
@@ -18,6 +19,8 @@ const pageTitle = title === "HEMA Odense" ? title : `${title} | HEMA Odense`;
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/png" href={withBase("/images/brand/Hema_odense_logo.png")} />
+    <link rel="apple-touch-icon" href={withBase("/images/brand/Hema_odense_logo.png")} />
     <title>{pageTitle}</title>
   </head>
   <body>

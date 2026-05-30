@@ -206,6 +206,19 @@ input:focus-visible {
   margin-top: 1.5rem;
 }
 
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 1rem;
+  margin-top: 1.25rem;
+}
+
+.social-links a {
+  color: var(--accent);
+  font-weight: 800;
+  text-underline-offset: 0.25rem;
+}
+
 .highlight-band {
   align-items: start;
   background: #ece5dc;
