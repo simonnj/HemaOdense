@@ -7,15 +7,16 @@ export type Sponsor = {
 
 export const sponsors: Sponsor[] = [
   {
-    name: "Fjernvarme Fyn",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    website: "https://example.dk",
-    logo: "/images/sponsors/Fjernvarme-fyn.png",
-  },
-  {
-    name: "Faits Darmes",
-    description: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    website: "https://example.dk",
+    name: "Faits D'Armes",
+    description: "Som en af klubbens partnere giver Faits D'Armes 10% rabat til klubbens medlemmer til deres store katalog af proffesionelt HEMA udstyr",
+    website: "https://faitsdarmes.com/en/",
     logo: "/images/sponsors/faitsdiarmes.png",
   },
+  {
+    name: "Fjernvarme Fyn",
+    description: "Tak til fjernvarme fyn for at give os 5000kr til at købe udstyr til at starte sabel undervisning og få et kvindesæt af beskyttelsesudstyr",
+    website: "https://www.fjernvarmefyn.dk/",
+    logo: "/images/sponsors/Fjernvarme-fyn.png",
+  },
+  
 ];

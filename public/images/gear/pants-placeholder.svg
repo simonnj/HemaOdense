@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">Bukser placeholder</title>
+  <desc id="desc">Udskift med billede af anbefalede bukser.</desc>
+  <rect width="640" height="400" fill="#f7f4ef"/>
+  <path d="M238 92h164l34 246h-92l-24-152-24 152h-92z" fill="#1e2228"/>
+  <path d="M240 92h160v58H240z" fill="#b80000"/>
+  <text x="64" y="72" fill="#b80000" font-family="Arial, sans-serif" font-size="34" font-weight="700">Bukser</text>
+</svg>

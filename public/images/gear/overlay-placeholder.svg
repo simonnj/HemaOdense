@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">Hovedbeskyttelse placeholder</title>
+  <desc id="desc">Udskift med billede af mask overlay eller baghovedbeskytter.</desc>
+  <rect width="640" height="400" fill="#f7f4ef"/>
+  <ellipse cx="300" cy="210" rx="100" ry="126" fill="#1e2228"/>
+  <path d="M375 135c70 35 95 116 62 190l-70-26c24-52 9-103-35-130z" fill="#b80000"/>
+  <text x="64" y="72" fill="#b80000" font-family="Arial, sans-serif" font-size="34" font-weight="700">Hovedbeskyttelse</text>
+</svg>

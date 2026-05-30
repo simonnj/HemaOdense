@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">Jakke placeholder</title>
+  <desc id="desc">Udskift med billede af anbefalet jakke.</desc>
+  <rect width="640" height="400" fill="#f7f4ef"/>
+  <path d="M242 92h156l88 72-46 74-34-24v124H234V214l-34 24-46-74z" fill="#1e2228"/>
+  <path d="M320 98v232" stroke="#b80000" stroke-width="10"/>
+  <text x="64" y="72" fill="#b80000" font-family="Arial, sans-serif" font-size="34" font-weight="700">Jakke</text>
+</svg>

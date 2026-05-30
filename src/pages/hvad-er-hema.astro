@@ -4,41 +4,93 @@ import BaseLayout from "@layouts/BaseLayout.astro";
 import { withBase } from "../utils/paths";
 ---
 
-<BaseLayout title="Hvad er HEMA?" description="Kort forklaring af HEMA.">
+<BaseLayout title="Hvad er HEMA?" description="Forklaring af HEMA og historisk fægtning.">
   <Hero
     title="Hvad er HEMA?"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    subtitle="Historisk europæisk kampkunst baseret på gamle kilder, moderne træning og levende fællesskaber."
     image="/images/hero/magiske_dage.jpg"
   />
 
   <section class="content-section two-column">
     <div>
       <p class="eyebrow">Historisk fægtning</p>
-      <h2>Lorem ipsum dolor</h2>
+      <h2>Gamle kampkunster i moderne rammer</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua.
+        HEMA står for Historical European Martial Arts, på dansk ofte kaldet historisk
+        fægtning eller historisk europæisk kampkunst. Det er en moderne måde at træne
+        de kampkunster, der blev brugt i Europa før den moderne sportsfægtning tog form.
       </p>
       <p>
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat.
+        I stedet for at være en ubrudt tradition bliver HEMA genskabt gennem historiske
+        kilder: fægtebøger, manualer, illustrationer og beskrivelser skrevet af fortidens
+        mestre. Vi læser, fortolker og tester teknikkerne gennem træning, øvelser og
+        sparring.
+      </p>
+      <p>
+        HEMA har også en voksende kompetetiv scene hvor fægtere mødes til turneringer 
+        og for mulighed for at stress teste deres teknikker mod fægtere man ikke har mulighed for at sparre med i sin hverdag.
       </p>
     </div>
-    <img src={withBase("/images/hero/Simon_overskulder.JPG")} alt="HEMA udstyr placeholder" />
+    <img src={withBase("/images/hero/Simon_overskulder.JPG")} alt="HEMA fægter med maske og sværd" />
   </section>
 
   <section class="content-section card-grid">
     <article>
-      <h2>Træning</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h2>Internationalt</h2>
+      <p>
+        HEMA findes i dag som en international bevægelse med klubber, turneringer,
+        workshops og forskningsmiljøer på tværs af lande.
+      </p>
     </article>
     <article>
       <h2>Kilder</h2>
-      <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>
+        Træningen bygger på historiske manualer fra blandt andet middelalderen,
+        renæssancen og 1800-tallets militære og civile fægtemiljøer.
+      </p>
     </article>
     <article>
       <h2>Sikkerhed</h2>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+      <p>
+        Moderne HEMA bruger beskyttelsesudstyr, tydelige regler og kontrolleret
+        progression, så historiske teknikker kan trænes sikkert.
+      </p>
     </article>
+  </section>
+
+  <section class="content-section two-column">
+    <div>
+      <p class="eyebrow">Hvor kommer HEMA fra?</p>
+      <h2>Fra fægtebøger til foreningsliv</h2>
+      <p>
+        Europas historiske kampkunster var i mange århundreder praktiske færdigheder.
+        De blev brugt af soldater, borgere, adelsfolk, fægtemestre og andre, der havde
+        behov for at kunne forsvare sig eller uddanne andre i våbenbrug. Mange af
+        systemerne blev skrevet ned i manualer, som i dag er grundlaget for
+        meget af HEMA-træningen.
+      </p>
+      <p>
+        Da skydevåben, moderne militærtræning og sportsfægtning ændrede Europas
+        kampkultur, forsvandt mange af de gamle systemer som levende praksis. I nyere
+        tid begyndte historikere, fægtere og kampkunstnere at finde kilderne frem igen
+        og rekonstruere teknikkerne. Det er den genopdagelse, der i dag er blevet til
+        HEMA.
+      </p>
+    </div>
+    <div>
+      <p class="eyebrow">I Danmark</p>
+      <h2>Historisk fægtning som dansk fællesskab</h2>
+      <p>
+        I Danmark er HEMA vokset frem gennem lokale klubber, frivillige instruktører og
+        et stærkt samarbejde på tværs af landet. Danske HEMA-udøvere mødes til træning,
+        seminarer, stævner og fælles arrangementer, hvor der både er plads til
+        kildearbejde, teknik og sport.
+      </p>
+      <p>
+        Historisk fægtning er også blevet en del af den danske fægtefamilie gennem Dansk
+        Fægte-Forbund. Det giver HEMA-klubber en ramme for foreningsarbejde, sikkerhed,
+        uddannelse og samarbejde med det bredere danske idrætsliv.
+      </p>
+    </div>
   </section>
 </BaseLayout>

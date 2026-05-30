@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">Brystbeskytter placeholder</title>
+  <desc id="desc">Udskift med billede af bryst- eller halsbeskytter.</desc>
+  <rect width="640" height="400" fill="#f7f4ef"/>
+  <path d="M250 90h140l58 80-52 178H244l-52-178z" fill="#1e2228"/>
+  <path d="M278 80h84l18 48H260z" fill="#b80000"/>
+  <text x="64" y="72" fill="#b80000" font-family="Arial, sans-serif" font-size="34" font-weight="700">Hals og bryst</text>
+</svg>

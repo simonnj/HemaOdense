@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">Benbeskyttelse placeholder</title>
+  <desc id="desc">Udskift med billede af knæ- og skinnebensbeskyttere.</desc>
+  <rect width="640" height="400" fill="#f7f4ef"/>
+  <path d="M230 92h86l-24 246h-92zM360 92h86l-28 246h-92z" fill="#1e2228"/>
+  <circle cx="246" cy="210" r="42" fill="#b80000"/>
+  <circle cx="376" cy="210" r="42" fill="#b80000"/>
+  <text x="64" y="72" fill="#b80000" font-family="Arial, sans-serif" font-size="34" font-weight="700">Ben</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">Handsker placeholder</title>
+  <desc id="desc">Udskift med billede af anbefalede handsker.</desc>
+  <rect width="640" height="400" fill="#f7f4ef"/>
+  <path d="M155 175c0-70 56-110 118-88 44 16 74 63 74 121v92H180c-24-38-32-80-25-125z" fill="#1e2228"/>
+  <path d="M335 176c0-70 56-111 118-89 44 16 74 64 74 122v91H360c-24-38-32-80-25-124z" fill="#313842"/>
+  <rect x="190" y="280" width="138" height="50" fill="#b80000"/>
+  <rect x="370" y="280" width="138" height="50" fill="#b80000"/>
+  <text x="64" y="72" fill="#b80000" font-family="Arial, sans-serif" font-size="34" font-weight="700">Handsker</text>
+</svg>

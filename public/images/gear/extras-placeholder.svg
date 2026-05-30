@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">Ekstraudstyr placeholder</title>
+  <desc id="desc">Udskift med billede af ekstra udstyr.</desc>
+  <rect width="640" height="400" fill="#f7f4ef"/>
+  <path d="M150 260c80-70 180-73 285-20l55 54H155z" fill="#1e2228"/>
+  <path d="M170 294h335" stroke="#b80000" stroke-width="16"/>
+  <circle cx="228" cy="290" r="25" fill="#f7f4ef"/>
+  <circle cx="420" cy="290" r="25" fill="#f7f4ef"/>
+  <text x="64" y="72" fill="#b80000" font-family="Arial, sans-serif" font-size="34" font-weight="700">Ekstra</text>
+</svg>

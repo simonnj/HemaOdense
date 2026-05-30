@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">Maske placeholder</title>
+  <desc id="desc">Udskift med billede af anbefalet maske.</desc>
+  <rect width="640" height="400" fill="#f7f4ef"/>
+  <ellipse cx="320" cy="205" rx="115" ry="135" fill="#1e2228"/>
+  <path d="M228 190h184" stroke="#f7f4ef" stroke-width="8"/>
+  <path d="M230 225h180" stroke="#f7f4ef" stroke-width="8"/>
+  <path d="M250 155h140" stroke="#f7f4ef" stroke-width="8"/>
+  <path d="M260 310h120l28 48H232z" fill="#b80000"/>
+  <text x="64" y="72" fill="#b80000" font-family="Arial, sans-serif" font-size="34" font-weight="700">Maske</text>
+</svg>

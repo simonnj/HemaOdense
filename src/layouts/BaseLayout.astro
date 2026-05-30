@@ -29,11 +29,37 @@ const pageTitle = title === "HEMA Odense" ? title : `${title} | HEMA Odense`;
       <slot />
     </main>
     <footer class="site-footer">
-      <div>
-        <strong>HEMA Odense</strong>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="footer-column">
+        <h2>Adresse</h2>
+        <p>
+          Rosenbæk Torv 30<br />
+          5000 Odense
+        </p>
       </div>
-      <a href="mailto:kontakt@example.dk">kontakt@example.dk</a>
+      <div class="footer-column">
+        <h2>Kontakt</h2>
+        <p>Email: <a href="mailto:odensehema@gmail.com">odensehema@gmail.com</a></p>
+      </div>
+      <div class="footer-column">
+        <h2>Følg os</h2>
+        <ul class="footer-links">
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100094571515526" rel="noreferrer" target="_blank">
+              Facebook
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/hema.odense?igsh=MW95eTMxaGQ3dGQ4ZA==" rel="noreferrer" target="_blank">
+              Instagram
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@HEMAOdense" rel="noreferrer" target="_blank">
+              YouTube
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
