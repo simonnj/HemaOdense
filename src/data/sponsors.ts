@@ -6,12 +6,12 @@ export type Sponsor = {
 };
 
 export const sponsors: Sponsor[] = [
-  {
+  /*{
     name: "Faits D'Armes",
     description: "Som en af klubbens partnere giver Faits D'Armes 10% rabat til klubbens medlemmer til deres store katalog af proffesionelt HEMA udstyr",
     website: "https://faitsdarmes.com/en/",
     logo: "/images/sponsors/faitsdiarmes.png",
-  },
+  },*/
   {
     name: "Fjernvarme Fyn",
     description: "Tak til fjernvarme fyn for at give os 5000kr til at købe udstyr til at starte sabel undervisning og få et kvindesæt af beskyttelsesudstyr",
