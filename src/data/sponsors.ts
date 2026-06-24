@@ -19,5 +19,11 @@ export const sponsors: Sponsor[] = [
     website: "https://www.fjernvarmefyn.dk/",
     logo: "/images/sponsors/Fjernvarme-fyn.png",
   },
+  {
+    name: "Kriger Historical Weapons",
+    description: "Som en af klubbens partnere giver Krieger rabat og ekstra service på våben vi bestiller hos dem",
+    website: "https://kriegerweapons.com/",
+    logo: "/images/sponsors/KriegerWeapons.jpg",
+  },
   
 ];
